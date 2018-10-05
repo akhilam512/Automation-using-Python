@@ -1,3 +1,4 @@
+#import libraries
 from selenium import webdriver
 import time
 from selenium.webdriver.common.action_chains import ActionChains
@@ -5,11 +6,12 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.select import Select
 
+#firefox driver
 browser = webdriver.Firefox()
 my_uname = "AM.EN.U4CSE18362"
 my_pwd = "amrita1234"
 
-
+#access AUMS website
 browser.get("https://aums-students-am.amrita.edu:8443/cas/login?service=https%3A%2F%2Faums-students-am.amrita.edu%3A8443%2Faums%2FJsp%2FCore_Common%2Findex.jsp")
 
 while(True):
